@@ -20,6 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(morgan('dev'));
 
+// middlewares
 const verifyToken = async (req, res, next) => {
   const token = req.cookies?.token;
 
